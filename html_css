@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,100;1,200&display=swap');
+           *
+           {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+           }
+
+           body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-wrap: wrap;
+            background: #010615;
+           }
+        h3 {
+            font-family: century gothic;
+            font-size: 20pt;
+            color: #4800ad;
+            text-shadow: 2px 2px 2px rgb(177, 177, 177);
+           }
+        ul {
+            font-family: century gothic;
+            font-size: 15pt;
+            color: #A04FF8;
+            text-shadow: 2px 2px 4px rgb(156, 155, 155);
+        }
+        th {
+            font-family: century gothic;
+            font-size: 20pt;
+            color: #A04FF8;
+            text-shadow: 2px 2px 3px rgb(177, 177, 177);
+        }
+        td {
+            font-family: century gothic;
+            font-size: 15pt;
+            color: #A04FF8;
+            text-shadow: 2px 2px 3px rgb(161, 161, 161);
+        }
+        caption {
+            font-family: century gothic;
+            font-size: 15pt;
+            color: #A04FF8;
+            text-shadow: 2px 2px 3px rgb(177, 177, 177);
+        }
+    </style>
+</head>
+<body>
+<h3>CURSO TÉCNICO</h3>
+<table border=1 cellspacing="1">
+    <caption>INFORMAÇÕES PESSOAIS</caption>
+    <!--p>ETEC PROFESSOR CAMARGO ARANHA<br><br>
+    </p-->
+    <tr><td>
+    <form>
+        
+        <label for="nome">Nome &emsp;&emsp;&emsp;</label>
+        <input type="text" name="nome">
+        &emsp;
+        <label for="sobrenome">Sobrenome &emsp;</label>
+        <input type="text" name="sobrenome">
+        &emsp;
+    <label for="endereco">E-mail:</label>
+        <input type="text" name="em" id="email" placeholder="kiara12mendes@gmail.com" size="50" maxlenght= "100">
+        &emsp;
+        <label for="sexo">Sexo &ensp;</label>
+            <select name="sexo">
+            <option value="Selecione" selected>
+            <option value="f">Feminino
+            <option value="m">Masculino
+            <option value="t">Transgênero
+            <option value="n">Gênero neutro
+            <option value="nb">Não-binário
+            <option value="a">Agênero
+            <option value="p">Pangênero
+            <option value="gq">Genderqueer
+            <option value="ts">Two-spirit
+            </select>
+            <br><br>
+            
+        <label for="idade">Idade: &ensp;</label>
+        <input type="text" name="idade" id="idade" placeholder="00" size="5" maxlenght= "2">
+            &ensp;
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="end" id="endereco" placeholder="Digite seu endereço" size="50" maxlenght= "100">
+        &emsp;   
+        <label for="endereco">Cidade:</label>
+        <input type="text" name="cid" id="cidade" placeholder="São Paulo" size="15" maxlenght= "20">
+                <br><br>
+            <label for="cpf">CPF: &ensp;</label>
+            <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" size="20" maxlenght= "14">
+            &ensp; &ensp;
+
+            <label for="rg">RG: &ensp;</label>
+            <input type="text" name="rg" id="rg" placeholder="00000000-O" size="12" maxlenght= "10">
+            &emsp;
+
+            <label for="perfil">Perfil: &emsp;&emsp;&emsp;</label>
+            
+            <input type="radio" name="a" value="alun">Aluno
+            
+            <input type="radio" name="r" value="resp">Responsável
+          
+            <br><br></td></tr></table>
+            <table border=1 cellspacing="1">
+                <caption>ESCOLARIDADE</caption>
+            <tr><td>
+                <label for="endereco">Nome da Escola:</label>
+                <input type="text" name="es" id="escola" placeholder="ETEC PROFESSOR CAMARGO ARANHA" size="50" maxlenght= "100">
+                &emsp;
+            <br><br>
+            <label for="sit">Situação &ensp;</label>
+            <select name="situ">
+            <option value="Selecione" selected>
+            <option value="f">Concluido
+            <option value="m">Cursando
+            <option value="t">Trancado
+            </select>
+            &emsp;
+            <label for="period">Período: &emsp;</label>
+            
+            <input type="radio" name="man" value="tec">Manhã
+            
+            <input type="radio" name="tard" value="prof">Tarde
+            
+            <input type="radio" name="noite" value="aluno">Noite
+            &emsp;
+            <label for="sit">Série &ensp;</label>
+            <select name="serie">
+            <option value="Selecione" selected>
+            <option value="f">1º Ano
+            <option value="m">2º Ano
+            <option value="t">3º Ano
+            </select>
+            <br><br>
+            Curso &emsp;&emsp;
+               
+            <input type="checkbox" name="Even">
+            Eventos &emsp;  
+        
+            &emsp;<input type="checkbox" name="Coz">
+            Cozinha
+        
+            <input type="checkbox" name="ds">
+            Desenvolvimento de Sistemas     
+    
+            &emsp;
+            <label for="Observações">Observações: &emsp;</label>
+
+            <textarea name = "Observações"  id="Observações"   rows = "3" cols = "40" maxlenght= "50" 
+            placeholder = "Observações"></textarea>
+            <br><br>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Excluir">
+            </td></tr>
+            
+            </td></tr>
+<br><br>
+</table>
+</form>
+</body>
+</html>
