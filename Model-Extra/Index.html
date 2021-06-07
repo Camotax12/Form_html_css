@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula Trex-Codes</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <h1>CURSO TÉCNICO</h1>
+
+        <article class="container1">
+
+            <h5>INFORMAÇÕES PESSOAIS</h5>
+
+            <form action="">
+
+                <label for="Nome">Nome</label>
+                <input type="text" name="Nome" required="" autofocus="">
+
+                <label for="Sobrenome">Sobrenome</label>
+                <input type="text" name="Sobrenome" required="">
+
+                <label for="Email">E-mail:</label>
+                <input type="mail" name="mail" placeholder="kiara12mendes@gmail.com" required="">
+
+                <label id="Sexo" for="Sexo">Sexo</label>
+                <select name="Sexo" id="sexoSelect" required="">
+                    <option value="Seleecione" selected>Seleccione</option>
+                    <option value="f">Feminino</option>
+                    <option value="m">Masculino</option>
+                    <option value="t">Transgênero</option>
+                    <option value="n">Gênero neutro</option>
+                    <option value="nb">Não-binário</option>
+                    <option value="a">Agênero</option>
+                    <option value="p">Pangênero</option>
+                    <option value="gq">Genderqueer</option>
+                    <option value="ts">Two-spirit</option>
+                </select>
+
+                <label for="Idade">Idade:</label>
+                <input type="number" id="Idade" min="1" max="100" placeholder="00" required="">
+
+                <label for="endereco">Endereco:</label>
+                <input type="text" name="end" id="endereco" placeholder="Digite seu endereço" required="">
+
+                <label for="Cidade">Cidade:</label>
+                <input type="text" name="Cidade" id="Cidade" placeholder="São Paulo" required="">
+
+                <label for="CPF">CPF:</label>
+                <input type="text" name="CPF" id="CPF" placeholder="000.000.000-00" required="">
+
+                <label for="RG:">RG:</label>
+                <input type="text" name="RG" placeholder="00000000-0" required="">
+
+                <hr>
+                <label id="perfil" for="Perfil">Perfil:</label>
+                <input type="checkbox" name="a" value="aluno"><span>Aluno</span>
+                <input type="checkbox" name="r" value="Responsável"><span>Responsável</span>
+            </form>
+    </article>
+
+    <article class="container2">
+            
+            <h5>ESCOLARIDADE</h5>
+        <form action="">
+
+            <label for="endereco">Nome da Escola:</label>
+            <input type="text" name="Escola" id="Escola" placeholder="ETEC PROFESSOR CAMARGO ARANHA">
+
+            <label id="Situação" for="Situação">Situação</label>
+            <select id="SituaçãoSelect" name="Situação" id="Situação">
+                <option value="Seleecione" selected="">Seleccione</option>
+                <option value="f">Concluido</option>
+                <option value="m">Cursando</option>
+                <option value="t">Trancado</option>
+            </select>
+
+            <hr>
+            <label id="PeriodLabel" for="Period">Periodo:</label>
+            <input id="Period" type="radio" name="man" value="tec"><span>Manhã</span>
+            <input id="Period" type="radio" name="tard" value="prof"><span>Tarde</span>
+            <input id="Period" type="radio" name="noite" value="aluno"><span>Noite</span>
+
+            <hr>
+            <label for="Série">Série</label>
+            <select id="serieSelect" name="serie">
+                <option value="Selecione" selected>Seleccione</option>
+                <option value="f">1º Ano</option>
+                <option value="m">2º Ano</option>
+                <option value="t">3º Ano</option>
+            </select>
+
+            <hr>
+            <label id="CursoLabel" for="Curso">Curso</label>
+            <input type="checkbox" name="Eventos"><span>Eventos</span>
+            <input type="checkbox" name="Cozinha"><span>Cozinha</span>
+            <input type="checkbox" name="ds"><span>Desenvolvimento de Sistemas</span>
+
+            <hr>
+            <label id="labelTextarea" for="Observações">Observações:</label>
+            <textarea name="Observações" placeholder="Observações"></textarea>
+
+            <hr>
+            <button type="submit" id="btnSubmit"><span class="btnsIcons1"><i class="fas fa-save"></i> Cadastrar</span></button>
+
+            <button type="reset" id="BtnDelete"><span class="btnsIcons2"><i class="far fa-trash-alt"></i> Excluir</span></button>
+
+        </form>
+    </article>
+    </main>
+</body>
+</html>

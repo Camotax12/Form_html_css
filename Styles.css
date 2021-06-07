@@ -1,0 +1,244 @@
+:root {
+
+	/* Fonts */
+	--Font-Default: sans-serif;
+
+	/* containers size */
+	--sizeContainers:40%;
+
+	/* Textarea sizez */ 
+	--maxWidth-Textarea:  100%;
+	--minWidth-Textarea:  100%;
+
+	--maxHeight-Textarea: 250px;
+	--minHeight-Textarea:  200px;
+
+	/* COLORS */
+	/*backogrund body */
+	--BackgroundBody:  #19255A;
+
+	/* Articles colors */ 
+	/*--Articlescolors:  #CEB1BE;*/
+	--Articlescolors:  #B2E6D4;
+
+	/* colors styles inputs */ 
+	--color-focus:  #4D4847;
+
+	/* Color Spans */
+	--Color-Spans:  #A379C9;
+
+
+	/* colors forms submit - delete */ 
+	--colorBtn-Submit:  #2BC127;
+	--colorBtn-Delete: #EB483E;
+}
+
+body {
+	background-color: var(--BackgroundBody);
+}
+
+h1 {
+	text-align: center;
+	font-family: var(--Font-Default);
+}
+
+article {
+	background-color: var(--Articlescolors);
+	width: var(--sizeContainers);
+	display: inline-block;
+	padding: 20px;
+	margin-left: 50px;
+	border-radius: 10px;
+}
+
+h5 {
+	text-align: center;
+	font-family: var(--Font-Default);
+	font-size: 30px;
+}
+
+h1, h5 {
+	color: #FFFFFFFF;
+}
+
+/* ==================== */
+/* container 1			*/
+/* ==================== */
+
+.container1 form {
+	padding: 30px;
+}
+
+.container1 label {
+	display: block;
+}
+
+.container1 input {
+	width: 100%;
+	box-sizing:  border-box;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.container1 input[type="checkbox"] {
+	width: 9%;
+	padding: 0;
+}
+
+#perfil, #Sexo {
+	display: inline-block;
+}
+
+#Sexo {
+	display: block;
+}
+
+#sexoSelect {
+	padding: 13px;
+	margin-bottom: 20px;
+}
+
+
+/* ==================== */
+/* container 2			*/
+/* ==================== */
+
+.container2 {
+	position: relative;
+	top: -110px;
+}
+
+.container2 form {
+	background-color: var(--ColorsForms);
+	padding: 30px;
+}
+
+.container2 label {
+	display: block;
+}
+
+.container2 input {
+
+	width: 100%;
+	box-sizing:  border-box;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+#Situação{
+	display: inline-block;
+}
+
+#SituaçãoSelect, #serieSelect {
+	padding: 13px;
+	display: block;
+	margin-bottom: 20px;
+}
+.container2 input[type="radio"], .container2 input[type="checkbox"] {
+	width: 9%;
+	padding: 0;
+	display: inline-block;
+	margin-left: 0px;
+}
+
+#PeriodLabel, #CursoLabel {
+	display: inline-block;
+}
+
+textarea {
+	width: 50%;
+	margin-bottom: 30px;
+
+	max-width: var(--maxWidth-Textarea);
+	min-width: var(--minWidth-Textarea);
+
+	max-height: var(--maxHeight-Textarea);
+	min-height: var(--minHeight-Textarea);
+}
+
+#labelTextarea {
+	margin-bottom: 15px;
+}
+
+/* BUTTON END WEBsISTE */ 
+button {
+	width: 100%;
+	box-sizing:  border-box;
+	padding: 15px;
+	margin-bottom: 20px;
+	width: 30%;
+}
+
+#btnSubmit {
+	margin-left: 33%;
+	margin-right: 30px;
+}
+
+/* ==================== */
+/* 		  STYLES		*/
+/* ==================== */ 
+
+label {
+	font-family: var(--Font-Default);
+	color: #4025EF;
+	font-weight: bold;
+}
+
+input, select, textarea {
+	border-radius: 5px;
+	outline: none;
+	border: 3.5px solid #ABDAE1;
+}
+
+input:focus, select:focus {
+	border: 3px solid var(--color-focus) ;
+}
+
+/* placeholder inputs */ 
+input::placeholder, textarea::placeholder {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+span {
+	font-family: var(--Font-Default);
+	color: var(--Color-Spans);
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/* Span icons btn (Cadastrar - Excluir)
+span */ 
+
+button {
+	border-radius: 10px;
+	outline: none;
+	border: none;
+}
+
+#btnSubmit{
+	border: 2px solid var(--colorBtn-Submit);
+	color: var(--colorBtn-Submit);
+}
+
+#btnSubmit:hover{
+	box-shadow: 5px 5px 5px var(--colorBtn-Submit), -5px -5px 5px var(--colorBtn-Submit);
+}
+
+#BtnDelete {
+	border: 2px solid var(--colorBtn-Delete);
+	color: var(--colorBtn-Delete);
+}
+
+#BtnDelete:hover {
+	box-shadow: 5px 5px 5px var(--colorBtn-Delete), -5px -5px 5px var(--colorBtn-Delete);
+}
+
+/* icons */
+.btnsIcons1 {
+	color: var(--colorBtn-Submit);
+}
+
+.btnsIcons2 {
+	color: var(--colorBtn-Delete) ;
+}
